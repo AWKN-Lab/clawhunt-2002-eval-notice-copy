@@ -1,0 +1,16 @@
+suite_key: ops_assist.event_copy
+tool: ops_assist.event_copy
+version: "1.0.0"
+description: 运营辅助活动通知与报名招募文案评测集（40 条，全部虚构数据）
+pass_threshold: 0.8
+scorer: keyword-length-placeholder-absent
+expected_count: 40
+distribution_regular: 24
+distribution_missing_info: 8
+distribution_conflict: 4
+distribution_fee: 4
+tag_whitelist:
+  - regular
+  - missing-info
+  - conflict
+  - fee

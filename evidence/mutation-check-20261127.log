@@ -1,0 +1,18 @@
+== mutation A: pytest 原样 ==
+21 passed in 0.63s
+== mutation B1: 删【待补充】，lint 必须红 ==
+exit=1
+B1 拦住：cases.jsonl:25: 要点 p5 要求草稿含【待补充】，实际没有
+== mutation B2: must 全改 false，lint 必须红 ==
+exit=1
+B2 拦住：cases.jsonl:1: expected_points 至少 1 条 must=true，实际 0 条
+== mutation B3: 闭门会草稿塞嘉宾姓名，lint 必须红 ==
+exit=1
+B3 拦住：cases.jsonl:5: 要点 p6 的关键词出现在 reference_output 里（闭门会不出现嘉宾名单）
+== mutation B4: 费用草稿加「合计」，pii-scan 必须红 ==
+exit=1
+B4 拦住：cases.jsonl:37: reference_output 含折扣/合计类词
+== mutation C: 恢复后 pytest 再过，cases.jsonl SHA 不变 ==
+21 passed in 0.73s
+cases.jsonl SHA256 前后一致：True
+MUTATION CHECK: PASS

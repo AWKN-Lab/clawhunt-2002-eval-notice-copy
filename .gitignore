@@ -1,0 +1,6 @@
+.venv/
+.tmp-pip/
+__pycache__/
+.pytest_cache/
+reports/
+evidence/selftest-setup-sh-20261127.log
